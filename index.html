@@ -1,11 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
+    <style>
+        @media (max-width: 600px) {
+            .facet_sidebar {
+                display: none;
+            }
+        }
+        .flex{
+            display: flex;
+        }
+
+        .color1{
+            height: 400px;
+            background-color: blueviolet;
+            width: 100px;
+        }
+
+        .color2{
+            height: 400px;
+            background-color: chartreuse;
+            width: 100px;
+        }
+
+        .color3{
+            height: 400px;
+            background-color: crimson;
+            width: 100px;
+        }
+        #form{
+            height: 500px;
+
+        }
+        #nav-bar{
+            position: fixed;
+            top: 0;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <header id="header">
+        <img id="header-img" src="logo.jpg" alt="">
+        <nav id="nav-bar">
+            <a class="nav-link" href="#video">Instagram</a>
+            <a class="nav-link" href="#form">Facebook</a>
+            <a class="nav-link" href="#flex">Youtube</a>
+        </nav>
+    </header>
+    <video id="video" src="http://v2v.cc/~j/theora_testsuite/320x240.ogg" controls>
+        Tu navegador no implementa el elemento <code>video</code>.
+    </video>
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <input id="email" type="email" name="email" placeholder="ingrese su email" required>
+        <input id="submit" type="submit" value="enviar" name="">
+    </form>
+    <div id="flex">
+        <div class="color1">
+
+        </div>
+
+        <div class="color2">
+
+        </div>
+        
+        <div class="color3">
+
+        </div>
+    </div>
+   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
+
 </html>
